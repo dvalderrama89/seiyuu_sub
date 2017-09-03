@@ -1,0 +1,356 @@
+  /********************************/
+ /***  Sprite Sheet Positions  ***/
+/********************************/
+
+/* Sprite Sheet created by using: 
+   https://draeton.github.io/stitches/ 
+*/
+/***** For refference only *****
+
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-Gochiusa_15x15 {
+    width: 15px;
+    height: 15px;
+    background-position: -5px -5px;
+}
+
+.sprite-glasses_14x25 {
+    width: 25px;
+    height: 14px;
+    background-position: -5px -30px;
+}
+
+.sprite-toshitai_15x20 {
+    width: 20px;
+    height: 15px;
+    background-position: -5px -54px;
+}
+
+.sprite-toyosaki_15x19 {
+    width: 19px;
+    height: 15px;
+    background-position: -5px -79px;
+}
+
+.sprite-trysail_15x53 {
+    width: 53px;
+    height: 15px;
+    background-position: -5px -104px;
+}
+
+
+*/
+  /****************************/
+ /***  User Unique Flairs  ***/
+/****************************/
+
+.flair
+{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    
+    font-size: 12px;
+}
+
+
+/* ~~~~~ Begin custom user titles ~~~~~ */
+/* ~~~~~ Please keep the names in alphabetical order ~~~~~ */
+
+/*** >>> A <<< ***/
+/*** >>> B <<< ***/
+/*** >>> C <<< ***/
+/*** >>> D <<< ***/
+/*** >>> E <<< ***/
+/*** >>> F <<< ***/
+/*** >>> G <<< ***/
+/*** >>> H <<< ***/
+/*** >>> I <<< ***/
+
+    /* inspyral */
+    .flair.flair-inspyral:before  { 
+        background-image: url(%%spritesheet%%);
+        background-repeat: no-repeat;
+
+        /* .sprite-Gochiusa_15x15 */
+        width: 15px;
+        height: 15px;
+        background-position: -5px -5px;
+
+        color: rgba(255,255,255,.1); text-shadow: none;
+        content: "...."; 
+    }
+    .flair.flair-inspyral{ 
+        font-weight:bold; 
+        background-color: #bce2e8 !important; 
+        color: #FFF !important; 
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;  
+    }
+
+
+/*** >>> J <<< ***/
+
+    /* Johnhong */
+    .flair.flair-Johnhong{ font-weight:bold; background-color: rgba(255,255,255,.1);  }
+    .flair.flair-Johnhong:after{ 
+        background-image: url(%%spritesheet%%);
+        background-repeat: no-repeat;
+        background-position: right;
+
+        /* .sprite-toshitai_15x20 */
+        width: 20px;
+        height: 15px;
+        background-position: -5px -54px;
+
+        color: rgba(255,255,255,.1); text-shadow: none;
+        content: ".......";
+    }
+
+
+/*** >>> K <<< ***/
+/*** >>> L <<< ***/
+
+        /*  Lostblueskies */
+
+
+/*** >>> M <<< ***/
+
+
+    /* MorningMiso */
+    /* dedication to TrySail content */
+    .flair.flair-MorningMiso{ 
+        background-image: url(%%spritesheet%%);
+        background-repeat: no-repeat;
+        background-position: right;
+
+        /* .sprite-trysail_15x53 */
+        width: 53px;
+                height: 15px;
+                background-position: -5px -104px;
+
+        color: rgba(255,255,255,.1); text-shadow: none;
+        content: "trysail";
+    }
+
+
+/*** >>> N <<< ***/
+/*** >>> O <<< ***/
+/*** >>> P <<< ***/
+
+     /* Potastic */
+    .flair.flair-Potastic:before  { 
+        background-image: url(%%spritesheet%%);
+        background-repeat: no-repeat;
+
+        /* .sprite-glasses_14x25 */
+        width: 25px;
+        height: 14px;
+        background-position: -5px -30px;
+
+        color: rgba(255, 255, 255, 1);
+        content: ".......";  
+    }
+    .flair.flair-Potastic{ font-weight:bold; background-color: rgba(255,255,255,.1);  }
+    .flair.flair-Potastic:after { font-size: 1.5em; color: red; content: " ♥" }
+
+
+/*** >>> Q <<< ***/
+/*** >>> R <<< ***/
+/*** >>> S <<< ***/
+
+    /* SupportHamster */
+    /* (dubious) honour of being the first NSFW post in /r/seiyuu */
+    /* https://www.reddit.com/r/seiyuu/comments/6abdh4/sugita_and_nakamura_mess_around_with_the/dhdapvv/ */
+    .author[href$="/SupportHamster"]:before {
+        
+        font-weight:bold; 
+        color: #000 !important; 
+        text-shadow: -1px -1px 0 rgba( 255, 221, 27, .4);
+        content: "とても健全な";  
+    }
+
+    /*  Salo06 */
+    /* for his love and dedicated posts of Sphere and Toyosaki Aki */
+    .flair.flair-Salo06:before { 
+        background-image: url(%%spritesheet%%);
+        background-repeat: no-repeat;
+
+        /* sprite-toyosaki_15x19 */
+        width: 19px;
+        height: 15px;
+        background-position: -5px -79px;
+
+        color: rgba(255,255,255,.1); 
+                text-shadow: none;
+        content: "....."; 
+    }
+    .flair.flair-Salo06 { 
+                font-weight:bold; 
+                background-color: rgba( 0, 204, 104, 1) !important; 
+                color: #000 !important; 
+                text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;  
+    }
+    .flair.flair-Salo06:after{
+                content: "Toyosaki Aki";
+    }
+
+/*** >>> T <<< ***/
+/*** >>> U <<< ***/
+/*** >>> V <<< ***/
+/*** >>> W <<< ***/
+/*** >>> X <<< ***/
+/*** >>> Y <<< ***/
+/*** >>> Z <<< ***/
+
+
+
+
+/* ~~~~~ End custom user titles ~~~~~ */
+
+
+  /*********************/
+ /***  Link Flairs  ***/
+/*********************/
+
+.linkflairlabel { 
+    background: #FFF; 
+    color: #000; 
+    font: bold 12px Georgia, serif; 
+    border: 1px solid blue; 
+    border-radius: 3px; 
+    padding: 2px; 
+}
+
+
+  /*********************/
+ /*****  General  *****/
+/*********************/
+
+/* Comment note (borrowed from /r/games) - above top-level reply box only */
+.commentarea .usertext-edit:after {
+    /* content: "Please note: /r/Seiyuu's comments are moderated."; */
+    display: block;
+    text-align: center;
+    margin-top: -5px;
+    margin-bottom: 4px;
+    margin-right: -5px;
+    padding: 4px;
+    color: #000 !important;
+    background-color:#f6e69f;
+    border:1px solid orange;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+/* Better visible spammed/removed comments */
+body .content .sitetable .thing.spam, body .sitetable .thing.spam.deleted.link.self{
+border: solid 2px #FA8072 !important;
+}
+
+/* Links Colors & Size*/
+
+.title:hover {
+    color: #000 !important 
+/*    color: #8e752d !important */
+    }
+.title {
+    font-weight: bold !important;
+    font-size: 1.22em !important;
+    }
+.title {
+    color: black !important
+    }
+.title a.title:visited {
+    color: #a9a9a9 !important;
+    /*color:#666666 !important;*/
+    }
+.author {
+    color: #00305F !important
+    }
+.footer {
+    background-color: white;
+    border: 1px solid gray;
+    }
+.linefield {
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    }
+ 
+ 
+/*SIDEBAR RULES HOVER BOX! Stolen and modified from /r/manga who stole it from /r/videos*/
+/*************************/
+
+.side hr {
+    border: 0;
+    border-bottom: 1px solid white;
+    margin: 10px 0;
+}
+
+.side .bottom {
+    border-top: 1px solid white;
+}
+
+.side table {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    border: 1px solid #e2e2e2;
+    border-top: 0;
+    padding: 0px;
+}
+
+.side table thead {
+    display: none;
+}
+
+.side table tbody tr td {
+    display: block;
+    border: none;
+    padding: 0;
+}
+
+.side table tbody tr td:nth-of-type(1) {
+    background: #f5f5f5;
+    color: #3f3f3f;
+    padding: 8px;
+    transition: 200ms;
+    border-bottom: 1px solid #f3f3f3;
+    font-family: arial;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-position: right 5px;
+}
+
+.side table tbody tr td:nth-of-type(1):hover, .side table tbody tr:hover td:nth-of-type(1) {
+    background: #c0392b;
+    color: #fff;
+}
+
+.side table tbody tr td:nth-of-type(2), .side table tbody tr td:nth-of-type(3), .side table tbody tr td:nth-of-type(4), .side table tbody tr td:nth-of-type(5), .side table tbody tr td:nth-of-type(6), .side table tbody tr td:nth-of-type(7), .side table tbody tr td:nth-of-type(8), .side table tbody tr td:nth-of-type(9), .side table tbody tr td:nth-of-type(10), .side table tbody tr td:nth-of-type(11), .side table tbody tr td:nth-of-type(12), .side table tbody tr td:nth-of-type(13) {
+    max-height: 0;
+    color: black; 
+    border-top: 0;
+    margin: 0px 5px 0px;
+    transition: 300ms ease-in-out;
+    overflow: hidden;
+    width: 299px;
+    text-align: left;
+}
+
+
+.side table tbody tr:hover td:nth-of-type(2), .side table tbody tr:hover td:nth-of-type(3), .side table tbody tr:hover td:nth-of-type(4), .side table tbody tr:hover td:nth-of-type(5), .side table tbody tr:hover td:nth-of-type(6), .side table tbody tr:hover td:nth-of-type(7), .side table tbody tr:hover td:nth-of-type(8), .side table tbody tr:hover td:nth-of-type(9), .side table tbody tr:hover td:nth-of-type(10), .side table tbody tr:hover td:nth-of-type(11), .side table tbody tr:hover td:nth-of-type(12), .side table tbody tr:hover td:nth-of-type(13)  {
+    max-height: 200px;
+    transition: 300ms ease-in-out;
+    margin: 1px 5px 1px;
+    width: 299px;
+}
+
+
+/******************************/
+/*END SIDEBAR RULES HOVER BOX*/
