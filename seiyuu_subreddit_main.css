@@ -230,6 +230,42 @@
  /*****  General  *****/
 /*********************/
 
+#header {
+height: 212px;
+background: #3aa0a5;
+border: 0;
+border-bottom: 30px solid #3AA0A5; }
+
+#header-bottom-left ul.tabmenu {
+position: absolute;
+display: block;
+font-family: cantarell,Arial,sans-serif;
+font-weight: 700;
+height: 31px;
+top: 210px;
+left: 175px;
+margin: 0;
+text-align: left; }
+
+#header-bottom-left ul.tabmenu li { margin: 0; }
+#header-bottom-left ul.tabmenu li a {
+display: inline-block;
+font-size: 10px;
+line-height: 31px;
+text-transform: uppercase;
+color: rgba(255,255,255,.8);
+letter-spacing: 1px;
+border-right: 1px dashed rgba(255,255,255,.2);
+background-color: rgba(0,0,0,.05); }
+
+#header-bottom-left ul.tabmenu li a:hover { background: #349095; color: #fff; }
+
+#header-bottom-left ul.tabmenu li.selected a {
+color: #fff!important;
+text-decoration: underline;
+background-color: #3faeb4;
+border: 0; }
+
 /* Scrolling Banner */
 #header {
     background: url(%%main-banner%%);
@@ -242,8 +278,15 @@
 }
 
 #header-bottom-left {
-    margin-top: 139px;
-    
+    margin-top: 152px;
+}
+
+#header-bottom-left:after{ 
+font-weight: bold;
+font-size: 1.2em;
+color: white;
+content: "/r/seiyuu";
+vertical-align: 50%;
 }
 
 /* Subreddit home button */
