@@ -232,29 +232,29 @@
 
 /* Scrolling Banner */
 #header {
-    background: url(%%banner-bg%%);
-    -webkit-animation: scroll 25s linear infinite;
-    animation: scroll 100s linear infinite;
+    background: url(%%main-banner%%);
+    -webkit-animation: scroll 140s linear infinite;
+    animation: scroll 140s linear infinite;
 }
 @-webkit-keyframes scroll {
     from { background-position: 0; }
-    to   { background-position: -2560px; }
+    to   { background-position: -5060px; }
 }
 
 #header-bottom-left {
-    padding-top: 130px;
+    margin-top: 139px;
+    
 }
 
 /* Subreddit home button */
 #header .pagename a {
-    background: url(%%banner-maintxt%%) no-repeat;
-    background-position: center;
+    background: url(%%main-bannertxt%%) no-repeat;
     background-size: contain;
     position: absolute;
     top: 50%;
-    min-height: 70%;
+    min-height: 55%;
     left: 50%;
-    min-width: 42%;
+    min-width: 18%;
     transform: scale(1, 1) translate(-50%, -40%);
     font-size: 0px; /* This is to remove the sub name text */
 }
