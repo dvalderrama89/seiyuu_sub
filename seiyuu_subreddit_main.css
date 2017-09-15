@@ -230,8 +230,10 @@
  /*****  General  *****/
 /*********************/
 
+
+/* Tab menu */
 #header {
-height: 212px;
+height: 203px;
 background: #3aa0a5;
 border: 0;
 border-bottom: 30px solid #3AA0A5; }
@@ -242,7 +244,7 @@ display: block;
 font-family: cantarell,Arial,sans-serif;
 font-weight: 700;
 height: 31px;
-top: 210px;
+top: 202px;
 left: 175px;
 margin: 0;
 text-align: left; }
@@ -274,11 +276,11 @@ border: 0; }
 }
 @-webkit-keyframes scroll {
     from { background-position: 0; }
-    to   { background-position: -5060px; }
+    to   { background-position: -5133px; }
 }
 
 #header-bottom-left {
-    margin-top: 152px;
+    margin-top: 142px;
 }
 
 #header-bottom-left:after{ 
@@ -293,12 +295,13 @@ vertical-align: 50%;
 #header .pagename a {
     background: url(%%main-bannertxt%%) no-repeat;
     background-size: contain;
+    background-position: 50% 50%;
     position: absolute;
     top: 50%;
-    min-height: 55%;
+    min-height: 84%;
     left: 50%;
-    min-width: 18%;
-    transform: scale(1, 1) translate(-50%, -40%);
+    min-width: 500px; /* the width of the image */
+    transform: translate(-50%,-44%);
     font-size: 0px; /* This is to remove the sub name text */
 }
 
