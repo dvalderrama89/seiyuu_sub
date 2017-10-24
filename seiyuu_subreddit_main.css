@@ -236,7 +236,7 @@
 height: 203px;
 background: #3aa0a5;
 border: 0;
-border-bottom: 30px solid #3AA0A5; }
+border-bottom: 30px solid #0179d3; }
 
 #header-bottom-left ul.tabmenu {
 position: absolute;
@@ -260,12 +260,12 @@ letter-spacing: 1px;
 border-right: 1px dashed rgba(255,255,255,.2);
 background-color: rgba(0,0,0,.05); }
 
-#header-bottom-left ul.tabmenu li a:hover { background: #349095; color: #fff; }
+#header-bottom-left ul.tabmenu li a:hover { background: #f44538; color: #fff; }
 
 #header-bottom-left ul.tabmenu li.selected a {
 color: #fff!important;
 text-decoration: underline;
-background-color: #3faeb4;
+background-color: #f44538;
 border: 0; }
 
 /* Scrolling Banner */
@@ -365,6 +365,15 @@ border: solid 2px #FA8072 !important;
 
 /*** Sidebar General formatting ***/
 
+/* Changes the font size for all of the text in the sidebar */
+.md-container-small .md .-text, .side .md .-text, .md-container-small .md p,
+.side .md p, .md-container-small .md pre>code, .side .md pre>code,
+.md-container-small .md th, .side .md th, .md-container-small .md td,
+.side .md td, .md-container-small .md li, .side .md li {
+    font-size: 1.25em;
+    line-height: 1.25em;
+}
+
 .side hr {
     border: 0;
     border-bottom: 1px solid white;
@@ -382,19 +391,19 @@ border: solid 2px #FA8072 !important;
     width: 100%;
     height: 100%;
     border: 0;
-    background: #3faeb4;
+    background: #f44437;
     padding: 3px 5px;
 }
 .side .titlebox .res-fancy-toggle-button {
     border: 0;
-    background: #3faeb4;
+    background: #f44437;
     color: #FFF;
     padding: 3px 5px;
     line-height: 1;
 }
 
 .sidecontentbox .title {
-    background: #3AA0A5;
+    background: #0179d3;
     margin-bottom: 0;
     border-radius: 5px;
     padding: 0 0 0 10px;
@@ -421,7 +430,7 @@ border: solid 2px #FA8072 !important;
 .sidecontentbox .title .collapse-button {
     display: inline;
     color: #FFF;
-    background: #3faeb4;
+    background: #f44538;
     font-family: "Verdana", sans-serif;
     font-size: .9em;
     font-weight: bold;
@@ -440,7 +449,7 @@ border: solid 2px #FA8072 !important;
 .sidecontentbox a.helplink {
     display: inline;
     z-index: 1;
-    background: #F44336;
+    background: #f44538;
     border-radius: 3px;
     color: #fff;
     text-transform: uppercase;
@@ -485,7 +494,7 @@ border: solid 2px #FA8072 !important;
 }
 
 .side h2, h1.redditname, h1.redditname a {
-    background: #3AA0A5;
+    background: #0179d3;
     color: #fff;
     border-radius: 3px;
     text-align: center;
@@ -502,7 +511,7 @@ border: solid 2px #FA8072 !important;
 }
 
 .side blockquote:hover h2 {
-    background: #c0392b;
+    background: #f44538;
 }
 .side blockquote ol li {
     display: list-item;
@@ -527,23 +536,23 @@ border: solid 2px #FA8072 !important;
     padding: 6px 10px;
 }
 .side h2+table td:nth-of-type(1) {
-    background: #A5D6A7;
-    color: #fff;
+    background: #0179d3;
+    color: #ffffff;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     border-radius: 3px 0px 0px 3px;
 }
 .side h2+table td:nth-of-type(2) {
-    background: #E8F5E9;
-    color: #1B5E20;
+    background: #00589a;
+    color: #ffffff;
     border-color: rgba(0, 0, 0, .2);
     border-left: 0;
     border-radius: 0px 3px 3px 0px;
 }
 .side h2+table td:nth-of-type(3) {
-    background: #E8F5E9;
-    color: #1B5E20;
+    background: #0179d3;
+    color: #ffffff;
     border-color: rgba(0, 0, 0, .2);
     border-left: 0;
     border-radius: 0px 3px 3px 0px;
