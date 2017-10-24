@@ -336,7 +336,6 @@ border: solid 2px #FA8072 !important;
 
 .title:hover {
     color: #000 !important 
-/*    color: #8e752d !important */
     }
 .title {
     font-weight: bold !important;
@@ -347,7 +346,6 @@ border: solid 2px #FA8072 !important;
     }
 .title a.title:visited {
     color: #a9a9a9 !important;
-    /*color:#666666 !important;*/
     }
 .author {
     color: #00305F !important
@@ -360,10 +358,12 @@ border: solid 2px #FA8072 !important;
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
     }
- 
- 
-/*SIDEBAR RULES HOVER BOX! Stolen and modified from /r/manga who stole it from /r/videos*/
-/*************************/
+
+  /******************************/
+ /*       SIDEBAR              */
+/******************************/
+
+/*** Sidebar General formatting ***/
 
 .side hr {
     border: 0;
@@ -375,62 +375,183 @@ border: solid 2px #FA8072 !important;
     border-top: 1px solid white;
 }
 
-.side table {
-    display: block;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    border: 1px solid #e2e2e2;
+.side .subscribe-button {
+
+}
+.side .subscribe-button .option {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: #3faeb4;
+    padding: 3px 5px;
+}
+.side .titlebox .res-fancy-toggle-button {
+    border: 0;
+    background: #3faeb4;
+    color: #FFF;
+    padding: 3px 5px;
+    line-height: 1;
+}
+
+.sidecontentbox .title {
+    background: #3AA0A5;
+    margin-bottom: 0;
+    border-radius: 5px;
+    padding: 0 0 0 10px;
+    position: relative;
+    line-height: 35px;
+}
+.sidecontentbox .title h1 {
+    color: #FFF;
+    text-transform: lowercase;
+    font-size: 1.3rem;
+}
+.sidecontentbox .content {
+    background: #FFF;
+    border: 1px solid #cfcfcf;
     border-top: 0;
-    padding: 0px;
+    box-shadow: 0 -5px #6a9de6;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px;
 }
 
-.side table thead {
-    display: none;
+.sidecontentbox a.helplink,
+.side .md h1 a,
+.sidecontentbox .title .collapse-button {
+    display: inline;
+    color: #FFF;
+    background: #3faeb4;
+    font-family: "Verdana", sans-serif;
+    font-size: .9em;
+    font-weight: bold;
+    line-height: 13px;
+    padding: 3px 5px;
+    border: 0;
+    border-radius: 3px;
+    margin: 8px 8px 8px 0;
+    float: right;
+    width: auto;
+    height: auto;
+    position: relative;
+    z-index: 1;
 }
 
-.side table tbody tr td {
-    display: block;
-    border: none;
+.sidecontentbox a.helplink {
+    display: inline;
+    z-index: 1;
+    background: #F44336;
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-transition: box-shadow 0.2s ease;
+    transition: box-shadow 0.2s ease;
+}
+.sidecontentbox a.helplink:hover {
+    background: #E53935;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .14), 0 2px 2px 0 rgba(0, 0, 0, .098), 0 1px 5px 0 rgba(0, 0, 0, .084);
+    -webkit-transition: box-shadow 0.1s ease;
+    transition: box-shadow 0.1s ease;
+}
+
+.morelink .nub,
+.sidebox.create {
+    display: none
+}
+
+#search input[type="text"] {
+    height: 35px;
+    background: #FFF;
+    color: #000;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    padding: 0 40px 0 10px;
+    line-height: 30px;
+    position: relative;
+    z-index: 0;
+    transition: z-index 0s .2s, margin-left .2s, width .2s;
+}
+
+/***  END Sidebar General formatting ***/
+
+/*** Sidebar Rules formatting ***/
+/*SIDEBAR RULES HOVER BOX! Stolen and modified from /r/manga who stole it from /r/videos*/
+.side .md blockquote {
+    border-left: none;
+    margin: 0;
     padding: 0;
 }
 
-.side table tbody tr td:nth-of-type(1) {
-    background: #f5f5f5;
-    color: #3f3f3f;
-    padding: 8px;
-    transition: 200ms;
-    border-bottom: 1px solid #f3f3f3;
-    font-family: arial;
-    font-weight: bold;
-    background-repeat: no-repeat;
-    background-position: right 5px;
-}
-
-.side table tbody tr td:nth-of-type(1):hover, .side table tbody tr:hover td:nth-of-type(1) {
-    background: #c0392b;
+.side h2, h1.redditname, h1.redditname a {
+    background: #3AA0A5;
     color: #fff;
+    border-radius: 3px;
+    text-align: center;
 }
 
-.side table tbody tr td:nth-of-type(2), .side table tbody tr td:nth-of-type(3), .side table tbody tr td:nth-of-type(4), .side table tbody tr td:nth-of-type(5), .side table tbody tr td:nth-of-type(6), .side table tbody tr td:nth-of-type(7), .side table tbody tr td:nth-of-type(8), .side table tbody tr td:nth-of-type(9), .side table tbody tr td:nth-of-type(10), .side table tbody tr td:nth-of-type(11), .side table tbody tr td:nth-of-type(12), .side table tbody tr td:nth-of-type(13) {
-    max-height: 0;
-    color: black; 
-    border-top: 0;
-    margin: 0px 5px 0px;
-    transition: 300ms ease-in-out;
-    overflow: hidden;
-    width: 299px;
+.side blockquote h2 ~ ol {
+    display: none;
+}
+.side blockquote:hover h2 ~ ol {
+    display: block;
     text-align: left;
-}
-
-
-.side table tbody tr:hover td:nth-of-type(2), .side table tbody tr:hover td:nth-of-type(3), .side table tbody tr:hover td:nth-of-type(4), .side table tbody tr:hover td:nth-of-type(5), .side table tbody tr:hover td:nth-of-type(6), .side table tbody tr:hover td:nth-of-type(7), .side table tbody tr:hover td:nth-of-type(8), .side table tbody tr:hover td:nth-of-type(9), .side table tbody tr:hover td:nth-of-type(10), .side table tbody tr:hover td:nth-of-type(11), .side table tbody tr:hover td:nth-of-type(12), .side table tbody tr:hover td:nth-of-type(13)  {
-    max-height: 200px;
     transition: 300ms ease-in-out;
-    margin: 1px 5px 1px;
-    width: 299px;
+
 }
 
+.side blockquote:hover h2 {
+    background: #c0392b;
+}
+.side blockquote ol li {
+    display: list-item;
+}
 
+/*** END of Sidebar Rules formatting ***/
+
+/*** New Sidebar Birthday Table formatting ***/
+
+.side h2+table {
+    margin: 0;
+    border-collapse: separate;
+    border-spacing: 0 2px;
+    width: 100%;
+}
+.side h2+table thead {
+    display: none;
+}
+.side h2+table td {
+    border: 0;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 6px 10px;
+}
+.side h2+table td:nth-of-type(1) {
+    background: #A5D6A7;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 3px 0px 0px 3px;
+}
+.side h2+table td:nth-of-type(2) {
+    background: #E8F5E9;
+    color: #1B5E20;
+    border-color: rgba(0, 0, 0, .2);
+    border-left: 0;
+    border-radius: 0px 3px 3px 0px;
+}
+.side h2+table td:nth-of-type(3) {
+    background: #E8F5E9;
+    color: #1B5E20;
+    border-color: rgba(0, 0, 0, .2);
+    border-left: 0;
+    border-radius: 0px 3px 3px 0px;
+}
+
+/*** END of Sidebar Table formatting ***/
+
+  /******************************/
+ /*       END SIDEBAR          */
 /******************************/
-/*END SIDEBAR RULES HOVER BOX*/
+
