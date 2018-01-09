@@ -487,6 +487,8 @@ border: solid 2px #FA8072 !important;
 
 /*** Sidebar Rules formatting ***/
 /*SIDEBAR RULES HOVER BOX! Stolen and modified from /r/manga who stole it from /r/videos*/
+
+/* rules */
 .side .md blockquote {
     border-left: none;
     margin: 0;
@@ -507,7 +509,6 @@ border: solid 2px #FA8072 !important;
     display: block;
     text-align: left;
     transition: 300ms ease-in-out;
-
 }
 
 .side blockquote:hover h2 {
@@ -516,6 +517,27 @@ border: solid 2px #FA8072 !important;
 .side blockquote ol li {
     display: list-item;
 }
+
+/* flair def and search */
+
+.side h2+ul li > ul {
+    display: none;
+}
+.side h2+ul li:hover > ul { 
+    display: block;
+    text-align: left;
+    transition: 300ms ease-in-out;
+    
+    list-style-type: none;
+    border: 1px solid black; 
+    margin: 0px;
+    padding: 5px;
+    
+    border-color:#f0f0f0;
+    background-color:#fdfdfd;
+    font-size: 0.8em;
+}
+
 
 /*** END of Sidebar Rules formatting ***/
 
