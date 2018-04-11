@@ -270,13 +270,13 @@ border: 0; }
 
 /* Scrolling Banner */
 #header {
-    background: url(%%banner-jan18%%);
+    background: url(%%banner-april18%%);
     -webkit-animation: scroll 140s linear infinite;
-    animation: scroll 140s linear infinite;
+    animation: scroll 181s linear infinite;
 }
 @-webkit-keyframes scroll {
     from { background-position: 0; }
-    to   { background-position: -4940px; }
+    to   { background-position: -5450px; }
 }
 
 #header-bottom-left {
